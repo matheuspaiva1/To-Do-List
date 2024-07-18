@@ -7,7 +7,7 @@ export default function List() {
     <ul>
         {todoList.map((todo: any) => (
           
-          <li key={todo}>{todo}</li>
+          <li key={todo} className='border border-green-200 mb-4 p-2 rounded-lg text-green-700 font-medium'>{todo}</li>
         ))}
       </ul>
   )
