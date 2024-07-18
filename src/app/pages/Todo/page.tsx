@@ -9,7 +9,9 @@ export default function Todo() {
     <div className="flex flex-col w-full">
       <Form/>
 
-      <List/>
+      <div className="flex flex-col w-full max-w-sm my-0 mx-auto mt-8">
+        <List/>
+      </div>
     </div>
   )
 }

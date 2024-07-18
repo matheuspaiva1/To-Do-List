@@ -1,13 +1,11 @@
 import AppContext from '@/app/contexts/appContext'
-import React, { useContext } from 'react'
+import React, { ChangeEvent,  InputHTMLAttributes,  useContext } from 'react'
 
-export default function Input() {
-  const {setTask} = useContext(AppContext)
+type InputProps = InputHTMLAttributes<HTMLInputElement>
+export default function Input({...rest}: InputProps) {
   return (
     <input
-          type="text"
-          placeholder="Insira o nome da tarefa"
-          onChange={e => setTask(e.target.value)}
+          {...rest}
         />
   )
 }
